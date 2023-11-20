@@ -10,6 +10,7 @@ import SupabaseProvider from '@/providers/SupabaseProvider'
 import Player from '@/Components/Player'
 
 import './globals.css'
+import "../styles/globals.css";
 
 const font = Figtree({ subsets: ['latin'] })
 
@@ -22,9 +23,9 @@ export const revalidate = 0;
 
 export default async function RootLayout({
   children,
-}: {
+}: Readonly<{
   children: React.ReactNode
-}) {
+}>) {
   const products = await getActiveProductsWithPrices();
   const userSongs = await getSongsByUserId();
 
