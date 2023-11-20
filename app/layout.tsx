@@ -10,7 +10,6 @@ import SupabaseProvider from '@/providers/SupabaseProvider'
 import Player from '@/Components/Player'
 
 import './globals.css'
-import "../styles/globals.css";
 
 const font = Figtree({ subsets: ['latin'] })
 
