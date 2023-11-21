@@ -21,7 +21,7 @@ const formatPrice = (price: Price) => {
     style: 'currency',
     currency: price.currency,
     minimumFractionDigits: 0
-  }).format((price?.unit_amount || 0) / 100);
+  }).format((price?.unit_amount ?? 0) / 100);
 
   return priceString;
 };
